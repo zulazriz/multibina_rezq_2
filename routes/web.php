@@ -50,7 +50,7 @@ use App\Data\DummyData;
 // Laluan utama untuk landing page.
 // Ini adalah laluan yang akan dilihat oleh pengguna apabila mereka melawat URL akar (/).
 // Ia tidak memerlukan sebarang pengesahan (authentication) dan boleh diakses oleh sesiapa sahaja.
-Route::get('/mrr', function () {
+Route::get('/', function () {
     // Mengambil data projek dan slaid dari class DummyData.
     // Pastikan class DummyData wujud dan mengandungi method getProjects() dan getSlides().
     $projects = DummyData::getProjects();
