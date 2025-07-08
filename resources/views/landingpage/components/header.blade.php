@@ -17,9 +17,9 @@ if (darkMode) document.documentElement.classList.add('dark');"
         <title>{{ config('app.name', 'MRR') }}</title>
 
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
-        <link rel="icon" type="image/png" sizes="40x40" href="{{ asset('storage/images/mrr_2.png') }}">
-        <link rel="icon" type="image/png" sizes="20x20" href="{{ asset('storage/images/mrr_2.png') }}">
-        <link rel="apple-touch-icon" sizes="220x220" href="{{ asset('storage/images/mrr_2.png') }}">
+        <link rel="icon" type="image/png" sizes="40x40" href="{{ asset('images/mrr_2.png') }}">
+        <link rel="icon" type="image/png" sizes="20x20" href="{{ asset('images/mrr_2.png') }}">
+        <link rel="apple-touch-icon" sizes="220x220" href="{{ asset('images/mrr_2.png') }}">
 
         <!-- Alpine.js with Intersect Plugin -->
         <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
@@ -50,8 +50,7 @@ if (darkMode) document.documentElement.classList.add('dark');"
                         onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth' })"
                         style="min-height: 112px;">
 
-                        <img src="{{ asset('storage/images/mrr_2.png') }}" alt="Logo"
-                            class="w-28 h-28 object-contain">
+                        <img src="{{ asset('images/mrr_2.png') }}" alt="Logo" class="w-28 h-28 object-contain">
 
                         <div class="text-2xl font-extrabold text-gray-800 dark:text-white leading-tight">
                             {{ env('TITLE_WEBSITE', 'MRR') }}
