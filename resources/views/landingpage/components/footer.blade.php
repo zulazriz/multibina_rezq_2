@@ -52,15 +52,17 @@
                 <div class="flex justify-center md:justify-start space-x-4 mb-4">
                     <!-- Facebook -->
                     <a href="#" class="text-gray-400 hover:text-white transition">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="...facebook icon path..." />
-                        </svg>
+                        <i data-lucide="facebook" class="w-6 h-6 text-white"></i>
                     </a>
+
                     <!-- Instagram -->
                     <a href="#" class="text-gray-400 hover:text-white transition">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="...instagram icon path..." />
-                        </svg>
+                        <i data-lucide="instagram" class="w-6 h-6 text-white"></i>
+                    </a>
+
+                    <!-- Youtube -->
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-lucide="youtube" class="w-6 h-6 text-white"></i>
                     </a>
                 </div>
             </div>
