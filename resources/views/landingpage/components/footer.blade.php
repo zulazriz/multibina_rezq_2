@@ -21,25 +21,27 @@
                 </ul>
             </div>
 
-            <div>
-                @php
-                    $contactInfo = [
-                        ['icon' => 'mail', 'title' => 'Email Us', 'info' => 'contact@mrr.com'],
-                        ['icon' => 'phone', 'title' => 'Call Us', 'info' => '+1 (555) 123-4567'],
-                        ['icon' => 'map-pin', 'title' => 'Visit Us', 'info' => '123 Innovation Street, Tech City'],
-                    ];
-                @endphp
+            <div class="flex justify-center">
+                <div class="w-max">
+                    @php
+                        $contactInfo = [
+                            ['icon' => 'mail', 'title' => 'Email Us', 'info' => 'contact@mrr.com'],
+                            ['icon' => 'phone', 'title' => 'Call Us', 'info' => '+1 (555) 123-4567'],
+                            ['icon' => 'map-pin', 'title' => 'Visit Us', 'info' => '123 Innovation Street, Tech City'],
+                        ];
+                    @endphp
 
-                <div class="space-y-2">
-                    @foreach ($contactInfo as $contact)
-                        <div class="flex items-start space-x-4 group">
-                            <i data-lucide="{{ $contact['icon'] }}" class="w-5 h-5 text-white mt-1"></i>
-                            <div>
-                                <p class="text-sm font-medium text-white">{{ $contact['title'] }}</p>
-                                <p class="text-sm text-gray-400">{{ $contact['info'] }}</p>
+                    <div class="space-y-2">
+                        @foreach ($contactInfo as $contact)
+                            <div class="flex items-start space-x-4 group">
+                                <i data-lucide="{{ $contact['icon'] }}" class="w-5 h-5 text-white mt-1"></i>
+                                <div>
+                                    <p class="text-sm font-medium text-white">{{ $contact['title'] }}</p>
+                                    <p class="text-sm text-gray-400">{{ $contact['info'] }}</p>
+                                </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
                 </div>
             </div>
 
